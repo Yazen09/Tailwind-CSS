@@ -1,194 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Yazen's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Boxing academy</title>
 </head>
-<body class="bg-gray-50 dark:bg-gray-900">
-
-<!-- Navbar -->
-<nav class="bg-white border-gray-200 dark:bg-gray-800">
-  <div class="max-w-screen-xl mx-auto flex justify-between items-center p-4">
-    <div id="Yazen" class="text-xl font-bold text-gray-900 dark:text-white">Yazen Abouchendi</div>
-    <button class="inline-flex items-center p-2 text-gray-500 rounded-lg md:hidden dark:text-gray-400" aria-controls="navbar-default" aria-expanded="false">
-      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
-    <div class="hidden md:flex md:w-auto" id="navbar-default">
-      <ul class="flex space-x-8">
-        <li><a href="#Home" class="text-blue-700 dark:text-white">Home</a></li>
-        <li><a href="#About" class="text-gray-700 dark:text-white">About</a></li>
-        <li><a href="#Projects" class="text-gray-700 dark:text-white">Projects</a></li>
-        <li><a href="#Contact" class="text-gray-700 dark:text-white">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Home Section -->
-<section id="Home" class="py-16 bg-white dark:bg-gray-900">
-  <div class="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2">
-    <div class="flex flex-col justify-center">
-      <h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-4">Yazen Abouchendi Portfolio</h1>
-      <p class="text-gray-500 dark:text-gray-400">I am a full-stack development learner, passionate about creating innovative web solutions. My goal is to become an expert in this ever-evolving field.</p>
-    </div>
-    <div id="JPG" class="hidden lg:block">
-      <img src="yazen.jpg" alt="Yazen's Portfolio Image" class="rounded-lg">
-    </div>
-  </div>
-</section>
-
-<!-- About Section -->
-<section id="About" class="py-12 bg-gray-100 dark:bg-gray-800">
-  <div class="text-center">
-    <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-6">My Skills</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="p-4 bg-white dark:bg-gray-700 rounded-lg shadow">🌍 Adaptability and Versatility</div>
-      <div class="p-4 bg-white dark:bg-gray-700 rounded-lg shadow">🤝 Team Work</div>
-      <div class="p-4 bg-white dark:bg-gray-700 rounded-lg shadow">🧠 Attention to Detail</div>
-      <div class="p-4 bg-white dark:bg-gray-700 rounded-lg shadow">💻 HTML</div>
-      <div class="p-4 bg-white dark:bg-gray-700 rounded-lg shadow">🎨 CSS</div>
-    </div>
-  </div>
-</section>
-
-<!-- Projects Section -->
-<section id="Projects" class="py-12 bg-white dark:bg-gray-900">
-  <div class="max-w-screen-xl mx-auto grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-    <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow">
-      <h5 class="text-2xl font-bold text-gray-900 dark:text-white">My first website | Gilera180CC</h5>
-      <p class="mt-2 text-gray-700 dark:text-gray-400">A website about Gilera 180cc for my HTML and CSS Basics checkpoint.</p>
-      <a href="file:///C:/Users/USER/OneDrive/Desktop/HTML%20CSS/index/index.html" class="text-blue-700 dark:text-blue-500 underline">Read more</a>
-    </div>
-    <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow">
-      <h5 class="text-2xl font-bold text-gray-900 dark:text-white">My second website | Nike store</h5>
-      <p class="mt-2 text-gray-700 dark:text-gray-400">Nike Air Force store for a responsive design checkpoint using Bootstrap.</p>
-      <a href="file:///C:/Users/USER/OneDrive/Desktop/nike/index.html" class="text-blue-700 dark:text-blue-500 underline">Read more</a>
-    </div>
-    <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow">
-      <h5 class="text-2xl font-bold text-gray-900 dark:text-white">My third website | Bella Pasta</h5>
-      <p class="mt-2 text-gray-700 dark:text-gray-400">A restaurant page using Bootstrap, following responsive design practices.</p>
-      <a href="file:///C:/Users/USER/OneDrive/Desktop/bootsrap%20checkpoint/index.html" class="text-blue-700 dark:text-blue-500 underline">Read more</a>
-    </div>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section id="Contact" class="py-16 bg-slate-400 dark:bg-gray-900">
-  <div class="max-w-screen-md mx-auto">
-    <h2 class="text-4xl font-extrabold text-center text-gray-900 dark:text-white mb-8">Contact Us</h2>
-    <form action="#" class="space-y-6">
-      <div>
-        <label for="email" class="block mb-2 text-sm text-gray-900 dark:text-gray-300">Your email</label>
-        <input type="email" id="email" class="block w-full p-2.5 bg-gray-50 border border-gray-300 text-sm rounded-lg dark:bg-gray-700 dark:text-white" placeholder="Enter your email address" required>
-      </div>
-      <div>
-        <label for="subject" class="block mb-2 text-sm text-gray-900 dark:text-gray-300">Subject</label>
-        <input type="text" id="subject" class="block w-full p-3 bg-gray-50 text-sm rounded-lg dark:bg-gray-700 dark:text-white" placeholder="Let me know what you need" required>
-      </div>
-      <div>
-        <label for="message" class="block mb-2 text-sm text-gray-900 dark:text-gray-300">Your message</label>
-        <textarea id="message" rows="6" class="block w-full p-2.5 bg-gray-50 text-sm rounded-lg dark:bg-gray-700 dark:text-white" placeholder="Leave a comment"></textarea>
-      </div>
-      <button type="submit" class="px-5 py-3 bg-blue-700 text-white font-medium text-sm rounded-lg hover:bg-blue-800 dark:bg-blue-600">Send message</button>
-    </form>
-  </div>
-</section>
 
 
+<body>
+    <header class="header">
+        <nav class="navbar flex justify-around font-extralight bg-black text-white">
+        <a href="#Featured Posts">Featured Posts</a>
+        <a href="#Training Category">Training Category</a>
+        <a href="" class="logo flex font-black"><img src="" alt="">Boxraw</a> 
+        <a href="#Recent Posts">Recent Posts</a>
+        <a href="#Fight coverage">Fight coverage</a>
+
+    </nav>
+    </header>
 
 
+    
+    <section id="Featured Posts"> 
+        
+        <div class="class mt-12 mr-10 flex justify-center ">
 
-<footer class="bg-white dark:bg-gray-900">
-  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-      <div class="md:flex md:justify-between">
-        <div class="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" class="flex items-center">
-                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="My portfolio text" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">My portfolio</span>
-            </a>
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJEwl5VlVZ-U5KemMoI001fyieiqRHGblzQA&s" alt="">
+
         </div>
-        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
-                <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                    <li class="mb-4">
-                        <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
-                    </li>
-                    <li>
-                        <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
-                    </li>
-                </ul>
+
+        <br>
+        <br>
+
+        <h2 class="text-4xl font-bold text-center text-black mb-10">Featured Posts</h2>
+
+        <div class="flex justify-center space-x-8 mt-10">
+            <div class="card text-center">
+                <img src="https://boxraw.com/cdn/shop/articles/Walker-BN_400x.jpg?v=1626168774" alt="Card Image" class="mx-auto">
+                <div class="content mt-4">
+                    <h2 class="font-bold">Toy Bulldog: The Unique Life of Mickey Walker</h2>
+                    <p class="font-extralight">BOXRAW look back at the historic life and career of one of boxing’s most unique fighters Mickey Walker.</p>
+                    <button class="text underline mt-2">Read More</button>
+                </div>
             </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
-                <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                    <li class="mb-4">
-                        <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
-                    </li>
-                    <li>
-                        <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
-                    </li>
-                </ul>
+        
+            <div class="card text-center">
+                <img src="https://boxraw.com/cdn/shop/articles/boxing_s_black_murderers_row_fighters_400x.jpg?v=1665763362" alt="Card Image" class="mx-auto">
+                <div class="content mt-4">
+                    <h2 class="font-bold">Feared Fighters: Boxing’s Black Murderers Row</h2>
+                    <p class="font-extralight">BOXRAW look back in history at boxing’s Black Murderers Row fighters who were heavily avoided and feared during their era.</p>
+                    <button class="text underline mt-2">Read More</button>
+                </div>
             </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
-                <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-                    </li>
-                </ul>
+        
+            <div class="card text-center">
+                <img src="https://boxraw.com/cdn/shop/articles/mafiablogheaderv2_400x.jpg?v=1652807426" alt="Card Image" class="mx-auto">
+                <div class="content mt-4">
+                    <h2 class="font-bold">Boxing’s Dark History With The Mafia</h2>
+                    <p class="font-extralight">Read five unique stories of boxing’s dark history with the mafia from fights being fixed to mysterious gangster murders.</p>
+                    <button class="text underline mt-2">Read More</button>
+                </div>
             </div>
         </div>
-    </div>
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-    <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" class="hover:underline">Yazen™</a>. All Rights Reserved.
-        </span>
+
+   </section>
 
 
-        <div class="flex mt-4 sm:justify-center sm:mt-0">
-            <a href="https://www.facebook.com/yazenabouchendi/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
-                      <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
-                  </svg>
-                <span class="sr-only">Facebook page</span>
-            </a>
+
+
+   <section id="Training Category" class=" py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-black mb-10">Boxing Training</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            <a href="" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
-                      <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
-                  </svg>
-                <span class="sr-only">Discord community</span>
-            </a>
-            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
-                  <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
-              </svg>
-                <span class="sr-only">Twitter page</span>
-            </a>
-            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
-                </svg>
-                <span class="sr-only">GitHub account</span>
-            </a>
-            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
-              </svg>
-                <span class="sr-only">Dribbble account</span>
-            </a>
+            
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img src="https://boxraw.com/cdn/shop/articles/Tank_Running_2_400x.jpg?v=1639667584" alt="Cardio Training" class="rounded-lg mb-4 w-full">
+                <h3 class="text-2xl font-semibold mb-2">Cardio Training</h3>
+                <p class="text-gray-600">Cardio is essential for boxers to build endurance and stay in peak condition during long fights.</p>
+                
+                
+                <div class="mt-4">
+                    <span class="inline-block bg-red-500 text-white text-xs px-2 py-1 rounded-full mr-2">Endurance</span>
+                    <span class="inline-block bg-blue-500 text-white text-xs px-2 py-1 rounded-full mr-2">HIIT</span>
+                    <span class="inline-block bg-green-500 text-white text-xs px-2 py-1 rounded-full">Running</span>
+                </div>
+
+                <button class="mt-4 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800">Learn More</button>
+            </div>
+
+            
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img src="https://boxraw.com/cdn/shop/articles/How_To_Use_Boxing_Punch_Bags_Properly_400x.jpg?v=1713446691" alt="Strength Training" class="rounded-lg mb-4 w-full">
+                <h3 class="text-2xl font-semibold mb-2">Strength Training</h3>
+                <p class="text-gray-600">Building strength is crucial for delivering powerful punches. Incorporate compound exercises like squats and push-ups.</p>
+                
+                
+                <div class="mt-4">
+                    <span class="inline-block bg-yellow-500 text-white text-xs px-2 py-1 rounded-full mr-2">Power</span>
+                    <span class="inline-block bg-purple-500 text-white text-xs px-2 py-1 rounded-full mr-2">Strength</span>
+                    <span class="inline-block bg-red-500 text-white text-xs px-2 py-1 rounded-full">Core</span>
+                </div>
+
+                <button class="mt-4 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800">Learn More</button>
+            </div>
+
+           
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img src="https://boxraw.com/cdn/shop/articles/How_to_Wrap_Your_Hands_for_Boxing_22bb5968-27f7-4601-99c0-b9446fa66661_400x.jpg?v=1668521902" alt="Technique Training" class="rounded-lg mb-4 w-full">
+                <h3 class="text-2xl font-semibold mb-2">Technique Training</h3>
+                <p class="text-gray-600">Perfect your footwork, head movement, and punch accuracy with regular mitt and bag work.</p>
+                
+                
+                <div class="mt-4">
+                    <span class="inline-block bg-blue-500 text-white text-xs px-2 py-1 rounded-full mr-2">Footwork</span>
+                    <span class="inline-block bg-green-500 text-white text-xs px-2 py-1 rounded-full mr-2">Accuracy</span>
+                    <span class="inline-block bg-orange-500 text-white text-xs px-2 py-1 rounded-full">Head Movement</span>
+                </div>
+
+                <button class="mt-4 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800">Learn More</button>
+            </div>
         </div>
     </div>
-  </div>
-</footer>
+</section>
+
+
+
+<section id="Recent Posts" class="py-12">
+    <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-center text-black mb-8">Recent Posts</h2>
+        <ol class="list-decimal list-inside space-y-4 text-lg text-gray-800 text-justify ml-9 font-thin">
+            <li class="flex justify-between">
+                <span class="font-extralight">David Benavidez vs. David Morrell Possible For December</span>
+                <a href="https://www.youtube.com/watch?v=lkpTLv7CV70" target="_blank" class="text-blue-500 hover:text-blue-700 mr-10">
+                    YouTube Link
+                </a>
+            </li>
+            <li class="flex justify-between">
+                <span class="font-extralight">Dmitry Bivol Expects Artur Beterbiev to Be At Full Strength</span>
+                <a href="https://www.youtube.com/watch?v=FGpJRDtkFd4" target="_blank" class="text-blue-500 hover:text-blue-700 mr-10">
+                    YouTube Link
+                </a>
+            </li>
+            <li class="flex justify-between">
+                <span class="font-extralight">Shakur Stevenson Rejects Tuneup Need For William Zepeda Fight</span>
+                <a href="https://www.youtube.com/watch?v=DjVY4e38pzY" target="_blank" class="text-blue-500 hover:text-blue-700 mr-10">
+                    YouTube Link
+                </a>
+            </li>
+        </ol>
+    </div>
+</section>
+
+
+
+
+
+<section id="Fight coverage">
+    <h2 class="text-4xl font-bold text-center text-black mb-10">Newsletter for fights coverage</h2>
+
+    <div class="max-w-md mx-auto p-6 bg-black rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-4 text-white">Subscribe to Our Newsletter</h2>
+        <p class="text-white mb-6">Get the latest news about MMA and Boxing fight matches delivered to your inbox.</p>
+        
+        <form action="#" method="POST" class="space-y-4">
+          <div>
+            <label for="email" class="block text-sm font-medium text-white">Email address</label>
+            <input type="email" id="email" name="email" required
+              class="mt-1 p-3 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
+          </div>
+          <div>
+            <button type="submit" 
+              class="w-full py-3 px-4 bg-black text-white font-semibold rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+      <br>
+
+      
+      <footer class="bg-black text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            
+            
+            <div class="flex space-x-6">
+              <a href="#" class="text-white hover:text-white">
+                <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .588c-6.63 0-12 5.373-12 12 0 5.328 4.327 9.727 9.965 10.643v-7.513h-3.009v-3.13h3.009v-2.414c0-3.064 1.792-4.761 4.533-4.761 1.313 0 2.686.235 2.686.235v2.998h-1.512c-1.492 0-1.953.926-1.953 1.876v2.066h3.328l-.532 3.13h-2.796v7.513c5.638-.916 9.965-5.315 9.965-10.643 0-6.627-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" class="text-white hover:text-white">
+                <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c-5.458 0-9.867 4.406-9.867 9.843 0 4.363 2.813 8.066 6.689 9.388v-6.648h-2.017v-2.74h2.017v-2.056c0-1.995 1.237-3.085 3.04-3.085.867 0 1.609.065 1.825.094v2.12h-1.25c-1.007 0-1.202.479-1.202 1.182v1.645h2.406l-.313 2.74h-2.093v6.648c3.876-1.322 6.688-5.025 6.688-9.388 0-5.437-4.409-9.843-9.867-9.843z"/></svg>
+              </a>
+              <a href="#" class="text-white hover:text-white">
+                <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.953 4.569c-.885.392-1.83.656-2.825.775 1.014-.608 1.794-1.57 2.163-2.723-.951.563-2.005.974-3.127 1.194-.897-.957-2.173-1.555-3.594-1.555-2.717 0-4.92 2.194-4.92 4.917 0 .39.044.765.128 1.124-4.087-.205-7.713-2.164-10.141-5.144-.422.725-.666 1.56-.666 2.456 0 1.694.864 3.188 2.177 4.066-.803-.026-1.56-.247-2.224-.616v.061c0 2.367 1.684 4.342 3.918 4.79-.41.112-.841.172-1.285.172-.314 0-.615-.03-.916-.086.617 1.926 2.41 3.329 4.538 3.369-1.662 1.305-3.757 2.082-6.037 2.082-.392 0-.779-.023-1.17-.067 2.157 1.383 4.72 2.191 7.476 2.191 8.972 0 13.876-7.438 13.876-13.877 0-.211-.004-.423-.014-.632.952-.687 1.779-1.548 2.437-2.528z"/></svg>
+              </a>
+            </div>
+      
+            
+            <div class="flex ml-20 space-x-10">
+              <a href="#" class="text-white hover:text-white">About Us</a>
+              <a href="#" class="text-white hover:text-white">Contact</a>
+              <a href="#" class="text-white hover:text-white">Privacy Policy</a>
+            </div>
+      
+            
+            <div class="text-white">
+              &copy; 2024 Fight News. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+
+
+
+
+
+    
+
+
+</section>
+
+
+
+
+
+
+
+   
 
 
 
@@ -197,8 +240,17 @@
 
 
 
+    
 
 
-  
+
+
+
+
+    
 </body>
+
+
+
+
 </html>
